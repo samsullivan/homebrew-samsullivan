@@ -5,11 +5,11 @@
 class Jqless < Formula
   desc ""
   homepage "https://github.com/samsullivan/jqless"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
-    url "https://github.com/samsullivan/jqless/releases/download/v0.1.2/jqless_Darwin_all.tar.gz"
-    sha256 "f1a3eb7c0141a039f6cc315cd5fa079432aa478c794e642a303d246ec6fb3f08"
+    url "https://github.com/samsullivan/jqless/releases/download/v0.1.3/jqless_Darwin_all.tar.gz"
+    sha256 "eb5a3e6ee04092af4fc65e5192de0fd58712e064d518eab005f174bc349e18ae"
 
     def install
       bin.install "jqless"
@@ -18,16 +18,16 @@ class Jqless < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samsullivan/jqless/releases/download/v0.1.2/jqless_Linux_arm64.tar.gz"
-      sha256 "877015b420972f33f7109b7d5db536770ba62534d362f5d6046052da29ad0673"
+      url "https://github.com/samsullivan/jqless/releases/download/v0.1.3/jqless_Linux_arm64.tar.gz"
+      sha256 "afdc9a4032b8730cd44c20e0e7d839dcb6370fba8f44574b40a1bed61153859b"
 
       def install
         bin.install "jqless"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/samsullivan/jqless/releases/download/v0.1.2/jqless_Linux_x86_64.tar.gz"
-      sha256 "2cb9c310b83ac27b4ff4b1065f5130138c493e6e3910f192c9bdc6891c6d1f8f"
+      url "https://github.com/samsullivan/jqless/releases/download/v0.1.3/jqless_Linux_x86_64.tar.gz"
+      sha256 "190c9be5e28758438701fb52ef06c50cd77649266276b97cd60c7c2f76f84ac5"
 
       def install
         bin.install "jqless"
